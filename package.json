@@ -5,8 +5,8 @@
   "repository": {},
   "scripts": {
     "start": "npm run build && node server.js",
-    "postinstall": "cd public && npm i",
-    "build": "cd public && ng build --prod"
+    "postinstall": "cd public && npm install",
+    "build": "cd public && npm run build"
   },
   "author": "lmssrinivas",
   "license": "MIT",
