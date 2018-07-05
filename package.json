@@ -4,9 +4,9 @@
   "main": "server.js",
   "repository": {},
   "scripts": {
-    "preinstall": "npm install pm2 -g && npm run build",
+    "preinstall": "npm i && npm install pm2 -g && npm run build",
     "start": "pm2 start server.js",
-    "postinstall": "npm i && npm run start",
+    "postinstall": "npm run start",
     "build": "cd public && npm install && npm run build"
   },
   "author": "lmssrinivas",
