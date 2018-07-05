@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "server.js",
   "repository": {},
+  "scripts": {
+    "start": "npm run build && node server.js",
+    "build": "cd public && ng build --prod"
+  },
   "author": "lmssrinivas",
   "license": "MIT",
   "dependencies": {
