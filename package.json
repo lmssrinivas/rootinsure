@@ -4,9 +4,10 @@
   "main": "server.js",
   "repository": {},
   "scripts": {
-    "start": "npm run build && node server.js",
-    "postinstall": "cd public && npm install",
-    "build": "cd public && npm run build"
+    "preinstall": "npm install pm2 -g && npm run build",
+    "start": "pm2 start server.js",
+    "postinstall": "npm run start",
+    "build": "cd public && npm install && npm run build"
   },
   "author": "lmssrinivas",
   "license": "MIT",
@@ -15,6 +16,7 @@
     "ejs": "^2.5.6",
     "express": "^4.15.2",
     "mongoose": "^4.9.5",
+    "pm2": "^3.0.0",
     "scribe-js": "^2.0.4",
     "serve-favicon": "^2.4.2"
   },
