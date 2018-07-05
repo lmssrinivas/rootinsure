@@ -5,6 +5,7 @@
   "repository": {},
   "scripts": {
     "start": "npm run build && node server.js",
+    "postinstall": "cd public && npm i",
     "build": "cd public && ng build --prod"
   },
   "author": "lmssrinivas",
@@ -16,5 +17,9 @@
     "mongoose": "^4.9.5",
     "scribe-js": "^2.0.4",
     "serve-favicon": "^2.4.2"
+  },
+  "engines": {
+    "node": "6.10.2",
+    "npm": "3.10.10"
   }
 }
