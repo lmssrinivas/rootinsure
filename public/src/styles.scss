@@ -43,7 +43,17 @@
   max-width: 40rem;
   color: white;
 }
-
+.card-img-top{
+  transition: all .5s;
+  height: 200px;
+  img{
+    height: 100%;
+    width: 100%;
+  }
+  &:hover{
+    transform: scale(1.2);
+  }
+}
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;

@@ -10,6 +10,10 @@ import { RouterModule } from "@angular/router";
 import { AppRouterConfig } from "./app.routing";
 import { CardComponent } from './shared/card/card.component'
 import { FontAwesomeModule } from 'ngx-icons';
+import { CarComponent } from './car/car.component';
+import { DentalComponent } from './dental/dental.component';
+import { MedicalComponent } from './medical/medical.component';
+import { ClaimsComponent } from './claims/claims.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { FontAwesomeModule } from 'ngx-icons';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    CardComponent
+    CardComponent,
+    CarComponent,
+    DentalComponent,
+    MedicalComponent,
+    ClaimsComponent
   ],
   imports: [
     BrowserModule,

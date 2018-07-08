@@ -6,9 +6,9 @@
       <h1 class="jumbotron-heading">Root Insure</h1>
       <p class="lead">Medcal , Dental and Car ... all in one place</p>
       <p>
-        <a href="/medical" class="btn btn-info my-2">Medical</a>
-        <a href="/dental" class="btn btn-warning my-2">Dental</a>
-        <a href="/car" class="btn btn-success my-2">Car</a>
+        <a routerLink="/medical" class="btn btn-info my-2">Medical</a>
+        <a routerLink="/dental" class="btn btn-warning my-2">Dental</a>
+        <a routerLink="/car" class="btn btn-success my-2">Car</a>
       </p>
     </div>
   </section>
@@ -17,11 +17,8 @@
     <div class="container">
 
       <div class="card-deck">
-        <app-card class='card' [type]="'Medical'"></app-card>
-        <app-card class='card' [type]="'Dental'"></app-card>
-        <app-card class='card' [type]="'Car'"></app-card>
+        <app-card class='card' [card]="card" *ngFor="let card of cards"></app-card>
       </div>
-
 
     </div>
   </div>

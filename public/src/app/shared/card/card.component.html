@@ -1,8 +1,10 @@
 
 <div>
-  <img class="card-img-top" src="./assets/images/insure-card.svg" alt="Card image cap">
+  <div class="card-img-top" *ngIf="card.thumbnail">
+    <img [src]="card.thumbnail" alt="Card image cap">
+  </div>
   <div class="card-body">
-    <h5 class="card-title">{{type}}</h5>
+    <h5 class="card-title">{{card.title}}</h5>
     <p class="card-text">No one can surely predict the future. But we can protect it.</p>
   </div>
   <div class="card-footer">

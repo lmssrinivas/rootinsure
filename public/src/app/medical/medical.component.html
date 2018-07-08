@@ -1,0 +1,20 @@
+
+<main role="main">
+
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Medical Insure</h1>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light pb-4">
+    <div class="container">
+
+      <div class="card-deck">
+        <app-card *ngFor="let card of cards" class='card' [card]="card"></app-card>
+      </div>
+
+    </div>
+  </div>
+
+</main>
